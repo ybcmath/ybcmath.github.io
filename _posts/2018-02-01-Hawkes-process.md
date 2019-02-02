@@ -10,17 +10,17 @@ Later Yosihiko Ogata used Hawkes process to model earthquake after-shocks events
 
 The estimation of Hawkes process is an interesting direction with many open problems. EM-Type algorithm proposed by [Veen and Schoenberg](https://www.tandfonline.com/doi/abs/10.1198/016214508000000148) is related to the nonparametric method by [Marsan and Lengline](http://science.sciencemag.org/content/319/5866/1076). Many papers are looking for faster algorithms in the multivariate case because the number of parameters and data, such as a recent [cumulants-based method](http://jmlr.org/papers/volume18/17-284/17-284.pdf). There is a good [review paper](https://projecteuclid.org/euclid.ss/1534147221) by Alex Reinhard for Spatiotemporal Point processes.
 
-#Applications
-##Crime
+# Applications
+## Crime
 George Mohler's [JASA paper](https://amstat.tandfonline.com/doi/abs/10.1198/jasa.2011.ap09546) uses nonparametric Hawkes process to model crimes in LA and [another paper](https://www.sciencedirect.com/science/article/pii/S0169207014000284) uses a KDE background method for Chicago crimes..... I am recently working on a gang violence intervention program in LA using multivariate Hawkes processes and also find this model is useful for retailation behaviors.
 
 
-##Network
+## Network
 Multivariate Hawkes processes (connection to [Granger causality](https://onlinelibrary.wiley.com/doi/full/10.1111/jtsa.12213)) are used to reconstruct networks. Examples: [Email network](https://www.tandfonline.com/doi/abs/10.1080/01621459.2015.1135802) using temporal Hawkes with background rate periodic in time (other choices of inhomogeneous background rate in time: [KDE](http://paleo.sscnet.ucla.edu/Lewis-Molher-EM_Preprint.pdf) and [log Gaussian Cox process](https://projecteuclid.org/euclid.aoas/1380804805)); [Bayesian Hawkes](http://proceedings.mlr.press/v32/linderman14.pdf) uses a temporal Hawkes with random graph prior; [Beyond Mutual Excitation](https://arxiv.org/pdf/1707.04928.pdf) considers inhibitions; We have a [recent paper](https://arxiv.org/abs/1811.06321) considering spatiotemporal case. 
 Interesting connection to dynamic [graph embeddings](https://ieeexplore.ieee.org/document/8294302/).
 
-##Epidemic
-###Socal media
+## Epidemic
+### Socal media
 Many papers(see [a review](https://arxiv.org/pdf/1708.06401.pdf)) are using Hawkes process to model contagious on social media such as retweeting. I got some interesting results when using Hawkes process to model tweet topics from NMF in a [REU project](https://academic.oup.com/imamat/article/81/3/409/2871030). Currently working on other applications of Hawkes topic model.
-###Disease
+### Disease
 Connection to SIR.
